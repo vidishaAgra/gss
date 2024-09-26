@@ -87,78 +87,73 @@
 					<!-- Date and Time Fields -->
 					<div class="row">
 						<div class="col-md col-sm-12 form-group mb-3">
-							<input type="date" name="date" placeholder="Date" class="form-control" required>
+							<input type="date" name="date" placeholder="Date" class="form-control" required style="font-size: 14px;">
 						</div>
 						<div class="col-md col-sm-12 form-group mb-3">
-							<input type="time" name="time" placeholder="Time" class="form-control" required>
+							<input type="time" name="time" placeholder="Time" class="form-control" required style="font-size: 14px;">
 						</div>
 					</div>
-		
+			
 					<!-- Festival Name and Venue Fields -->
 					<div class="row">
 						<div class="col-md col-sm-12 form-group mb-3">
-							<input type="text" name="festival_name" placeholder="Festival Name" class="form-control" required>
+							<input type="text" name="festival_name" placeholder="Festival Name" class="form-control" required style="font-size: 14px;">
 						</div>
 						<div class="col-md col-sm-12 form-group mb-3">
-							<input type="text" name="venue" placeholder="Venue" class="form-control" required>
+							<input type="text" name="venue" placeholder="Venue" class="form-control" required style="font-size: 14px;">
 						</div>
 					</div>
-		
+			
 					<!-- Image URL -->
 					<div class="col-12 form-group mb-3">
-						<!-- Option to choose between file upload or URL -->
-						<!-- <label for="imageChoice"></label> -->
-						<select id="imageChoice" class="form-control" onchange="toggleImageInput()">
+						<select id="imageChoice" class="form-control" onchange="toggleImageInput()" style="font-size: 14px;">
 							<option value="upload">Upload Image from Device</option>
 							<option value="url">Enter Image URL</option>
 						</select>
 					
 						<!-- File Upload (Default shown) -->
 						<div id="fileInputDiv" class="mt-3">
-							<!-- <label for="imageUpload"></label> -->
-							<input type="file" name="imageUpload" accept="image/*" class="form-control" id="imageUpload">
+							<input type="file" name="imageUpload" accept="image/*" class="form-control" id="imageUpload" style="font-size: 14px;">
 						</div>
 					
 						<!-- Image URL (Hidden initially) -->
 						<div id="urlInputDiv" class="mt-3" style="display:none;">
-							<label for="imageUrl">Enter Image URL:</label>
-							<input type="url" name="imageUrl" placeholder="Image URL" class="form-control" id="imageUrl">
+							<label for="imageUrl" style="font-size: 14px;">Enter Image URL:</label>
+							<input type="url" name="imageUrl" placeholder="Image URL" class="form-control" id="imageUrl" style="font-size: 14px;">
 						</div>
 					</div>
 					
-				
-					
-		
 					<!-- Description Field -->
 					<div class="col-12 form-group mb-3">
-						<textarea name="description" placeholder="Description" class="form-control" required></textarea>
+						<textarea name="description" placeholder="Description" class="form-control" required style="font-size: 14px;"></textarea>
 					</div>
-		
+			
 					<!-- Ticket Prices for Members and Non-Members -->
 					<div class="row">
 						<div class="col-md col-sm-12 form-group mb-3">
-							<input type="number" step="0.01" name="member_ticket_price" placeholder="Member Ticket Price" class="form-control" required>
+							<input type="number" step="0.01" name="member_ticket_price" placeholder="Member Ticket Price" class="form-control" required style="font-size: 14px;">
 						</div>
 						<div class="col-md col-sm-12 form-group mb-3">
-							<input type="number" step="0.01" name="non_member_entry_price" placeholder="Non-Member Entry Price" class="form-control" required>
+							<input type="number" step="0.01" name="non_member_entry_price" placeholder="Non-Member Entry Price" class="form-control" required style="font-size: 14px;">
 						</div>
 					</div>
-		
+			
 					<!-- FAQs and Sponsors -->
 					<div class="col-12 form-group mb-3">
-						<input type="text" name="faqs" placeholder="FAQs " class="form-control" required>
+						<input type="text" name="faqs" placeholder="FAQs" class="form-control" required style="font-size: 14px;">
 					</div>
 					<div class="col-12 form-group mb-3">
-						<input type="text" name="sponsors" placeholder="Sponsors" class="form-control" required>
+						<input type="text" name="sponsors" placeholder="Sponsors" class="form-control" required style="font-size: 14px;">
 					</div>
-		
+			
 					<!-- Add Event Button -->
 					<div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
-						<button type="submit" class="btn btn-primary display-4">Add Event</button>
+						<button type="submit" class="btn btn-primary display-4" style="font-size: 14px;">Add Event</button>
 					</div>
 				</form>
 			</div>
 		</div>
+		
 		
     </div>
 </section>
@@ -200,98 +195,79 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="footer1 cid-uofSSzPOXQ" once="footers" id="footer01-2i">
-	
-
-	
-	
+<section data-bs-version="5.1" class="footer1 cid-uofSSzPOXQ" once="footers" id="footer01-23">
 	<div class="container">
-		<div class="row mbr-white">
-			<div class="col-12 col-md-6 col-lg-3">
-				<h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
-					<strong>Company</strong>
-				</h5>
+		<div class="row mbr-white justify-content-center">
+			<div class="col-12 col-md-4 col-lg-3">
+				<h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5"><strong>GSS</strong></h5>
 				<ul class="list mbr-fonts-style display-7">
 					<li class="mbr-text item-wrap">About</li>
-					<li class="mbr-text item-wrap">Press</li>
-					<li class="mbr-text item-wrap">Careers</li>
-					<li class="mbr-text item-wrap">Social</li>
-					<li class="mbr-text item-wrap">Contact</li>
+					<li class="mbr-text item-wrap">Membership</li>
+					<li class="mbr-text item-wrap">Events</li>
 				</ul>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3">
-				<h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
-					<strong>Features</strong>
-				</h5>
-				<ul class="list mbr-fonts-style display-7">
-					<li class="mbr-text item-wrap">Branding</li>
-					<li class="mbr-text item-wrap">Promotion</li>
-					<li class="mbr-text item-wrap">Design</li>
-					<li class="mbr-text item-wrap">Creative</li>
-					<li class="mbr-text item-wrap">Production</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-6 col-lg-3">
+  
+			<div class="col-12 col-md-4 col-lg-3">
 				<h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
 					<strong>Support</strong>
 				</h5>
 				<ul class="list mbr-fonts-style display-7">
 					<li class="mbr-text item-wrap">Help</li>
-					<li class="mbr-text item-wrap">Info</li>
-					<li class="mbr-text item-wrap">Contacts</li>
+					<li class="mbr-text item-wrap">Contact</li>
 					<li class="mbr-text item-wrap">FAQ</li>
-					<li class="mbr-text item-wrap">Report</li>
+					<li class="mbr-text item-wrap"><br></li>
 				</ul>
 			</div>
-			<div class="col-12 col-md-6 col-lg-3">
+  
+			<div class="col-12 col-md-4 col-lg-3">
 				<h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
 					<strong>About</strong>
 				</h5>
 				<ul class="list mbr-fonts-style display-7">
 					<li class="mbr-text item-wrap">History</li>
 					<li class="mbr-text item-wrap">Clients</li>
-					<li class="mbr-text item-wrap">Teams</li>
-					<li class="mbr-text item-wrap">Brand</li>
-					<li class="mbr-text item-wrap">Terms</li>
+					<li class="mbr-text item-wrap">Terms And Conditions&nbsp;</li>
 				</ul>
 			</div>
-			<div class="col-12 mt-5 footer-col">
-				<div class="mbr-section-btn align-left">
-					<a class="btn btn-primary display-7" href="https://vidishaagra.github.io/gss/">Sign Up</a>
-					<a class="btn btn-success-outline display-7" href="https://vidishaagra.github.io/gss/">Read More</a>
-				</div>
-
-				<div class="social-row mt-2 display-7">
-					<div class="soc-item">
-						<a href="https://vidishaagra.github.io/gss//">
+  
+			<div class="col-12 mt-2 footer-col d-flex align-center justify-content-center">
+				<div class="social-row mt-2 display-7 d-flex justify-content-center">
+					<div class="soc-item mx-2">
+						<a href="https://vidishaagra.github.io/gss/">
 							<span class="mbr-iconfont socicon socicon-facebook"></span>
 						</a>
 					</div>
-					<div class="soc-item">
-						<a href="https://vidishaagra.github.io/gss//">
+					<div class="soc-item mx-2">
+						<a href="https://vidishaagra.github.io/gss/">
 							<span class="mbr-iconfont socicon socicon-twitter"></span>
 						</a>
 					</div>
-					<div class="soc-item">
-						<a href="https://vidishaagra.github.io/gss//">
+					<div class="soc-item mx-2">
+						<a href="https://vidishaagra.github.io/gss/">
 							<span class="mbr-iconfont socicon socicon-instagram"></span>
 						</a>
 					</div>
-					<div class="soc-item">
-						<a href="https://vidishaagra.github.io/gss//">
-							<span class="mbr-iconfont socicon-logmein socicon"></span>
+					<div class="soc-item mx-2">
+						<a href="https://vidishaagra.github.io/gss/">
+							<span class="mbr-iconfont socicon socicon-logmein"></span>
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-12 mt-4">
+  
+			<div class="col-12 mt-4 text-center">
 				<p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7">
-					© Copyright 2030 Mobirise - All Rights Reserved
+					© GSS - All Rights Reserved
 				</p>
 			</div>
 		</div>
 	</div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://vidishaagra.github.io/gss//3428524" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/offline-website-builder.html">Offline Website Software</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
+  </section>
+  
+
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>  
   
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
