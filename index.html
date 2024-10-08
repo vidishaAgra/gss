@@ -10,7 +10,7 @@
   <meta name="description" content="">
   
   
-  <title>Home]</title>
+  <title>Home</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -24,9 +24,18 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=BopZZc"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=BopZZc" type="text/css">
 
+    <!-- AWS SDK -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1110.0.min.js"></script>
+
+    <style>
+      /* Optional: Some simple styling for error messages */
+      .error {
+          color: red;
+          font-size: 0.9rem;
+      }
+  </style>
   
-  
-  
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1243.0.min.js"></script>
 </head>
 <body>
   
@@ -38,10 +47,10 @@
 			<div class="navbar-brand">
 				<span class="navbar-logo">
 					<a href="https://1gss.org/new/wp-content/uploads/2023/03/Samaj-LOGO.png">
-						<img src="assets/images/samaj-logo-96x91.png" alt="Mobirise Website Builder" style="height: 4.3rem;">
+						<img src="assets/images/samaj-logo-96x91.png" alt="" style="height: 4.3rem;">
 					</a>
 				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="https://vidishaagra.github.io/gss/index.html">GSS</a></span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-4" href="index.html">GSS</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">
@@ -53,14 +62,17 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="https://vidishaagra.github.io/gss/page2.html" target="_blank">About</a>
+						<a class="nav-link link text-black text-primary display-4" href="AboutUs.html" target="_blank">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="https://vidishaagra.github.io/gss/Members.html" aria-expanded="false">Membership</a>
+						<a class="nav-link link text-black display-4" href="Members.html" aria-expanded="false">Membership</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link link text-black text-primary display-4" href="https://vidishaagra.github.io/gss/page7.html">Gallery</a>
-					</li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="https://vidishaagra.github.io/gss/page8.html" target="_blank">Events</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="https://vidishaagra.github.io/gss/">Contact Us</a></li></ul>
+						<a class="nav-link link text-black text-primary display-4" href="gallery.html">Gallery</a>
+					</li>
+          
+          <li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="Events.html" target="_blank">Events</a></li><li class="nav-item"><a class="nav-link link text-black display-4" href="index.html">Contact Us</a></li>
+        </ul>
 				
 				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="https://gssevents.auth.us-east-1.amazoncognito.com/login?client_id=25tv5ace2if2bg9am7131ka5q1&response_type=code&scope=email+openid&redirect_uri=https://bucketeventk.s3.amazonaws.com/index.html" target="_blank">Become A Member</a></div>
 			</div>
@@ -79,7 +91,11 @@
 <div>To You Celebrating Culture
 </div><div>Beyond Borders.</div></h2>
         
-        <div class="mbr-section-btn"><a class="btn btn-white-outline display-4" href="https://vidishaagra.github.io/gss/">Get Involved</a>  <a class="btn btn-white-outline display-4" href="https://vidishaagra.github.io/gss/">Events</a></div>
+<div class="mbr-section-btn">
+  <a class="btn btn-white-outline display-4" href="Contact.html">Get Involved</a>
+  <a class="btn btn-white-outline display-4" href="Events.html">Events</a>
+</div>
+
       </div>
     </div>
   </div>
@@ -124,7 +140,7 @@
             <h6 class="item-subtitle mbr-fonts-style display-7">Date: 15-09-24&nbsp;</h6>
             <p class="mbr-text mbr-fonts-style display-7">
               Celebrate Raksha Bandhan with us bring your own Rakhi and enjoy with everyone!</p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-4">Book Now</a></div>
+            <div class="mbr-section-btn item-footer"><a href="index.html" class="btn item-btn btn-primary display-4">Book Now</a></div>
           </div>
 
         </div>
@@ -140,7 +156,7 @@
             <p class="mbr-text mbr-fonts-style display-7">
               Celebrate Raksha Bandhan with us bring your own Rakhi and enjoy with everyone!<br>
             </p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-4">Book Now</a></div>
+            <div class="mbr-section-btn item-footer"><a href="index.html" class="btn item-btn btn-primary display-4">Book Now</a></div>
           </div>
         </div>
       </div><div class="item features-image col-12 col-md-6 col-lg-4">
@@ -154,7 +170,7 @@
             <p class="mbr-text mbr-fonts-style display-7">
               Celebrate Raksha Bandhan with us bring your own Rakhi and enjoy with everyone!
             </p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-4">Book Now</a></div>
+            <div class="mbr-section-btn item-footer"><a href="index.html" class="btn item-btn btn-primary display-4">Book Now</a></div>
           </div>
         </div>
       </div>
@@ -183,7 +199,7 @@
                 </h1>
                 <p class="mbr-text mbr-fonts-style mb-4 display-7"><strong>Humanitarian Efforts and Cultural Heritage<br>Preservation</strong>.<br>Becoming a member of GSS Area provides you with<br>the great opportunity to preserve Gujarati traditions and<br>culture, attend numerous exciting Indian festivals and<br>network and spend time with the larger Gujarati<br>community!<br><br>
                 </p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-4" href="https://vidishaagra.github.io/gss/">New Member</a> <a class="btn btn-lg btn-black-outline display-4" href="https://vidishaagra.github.io/gss/">Renew</a></div>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-4" href="index.html">New Member</a> <a class="btn btn-lg btn-black-outline display-4" href="index.html">Renew</a></div>
               </div>
             </div>
           </div>
@@ -201,7 +217,7 @@
             <div class="col-12 content-head">
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Event Gallery</strong></h3>
                 <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">
-                    <a href="https://chatgpt.com" class="text-primary" target="_blank">View Full Gallery -&gt;</a></h5>
+                    <a href="gallery.html" class="text-primary" target="_blank">View Full Gallery -&gt;</a></h5>
             </div>
         </div>
         <div class="row">
@@ -303,7 +319,7 @@
                   Please support our community
                 </p>
                 <p class="mbr-text mbr-fonts-style mb-4 display-7">Check donations: Please contact one of the Board<br>member or mail your check directly</p>
-                <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-4" href="https://vidishaagra.github.io/gss/">Sponsor Us!&nbsp;</a></div>
+                <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-primary display-4" href="index.html">Sponsor Us!&nbsp;</a></div>
               </div>
             </div>
           </div>
@@ -314,55 +330,45 @@
 </section>
 
 <section data-bs-version="5.1" class="form03 cid-uofOWbOFBA" id="form03-21">
-    
-
-    
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg item-wrapper">
-                <div class="mbr-section-head mb-5">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Get Involved</strong></h3>
-                    
-                </div>
-                <div class="col-lg-12 mx-auto mbr-form" data-form-type="formoid">
-                    <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="GKC8kpmU/VJyduBvz2Jgqae1rnjj+B7t4C4hJPtHKd21vpTFsCbAERkSblt+H5HHrB25XJq7UkTyworI4Y9HIN0qw25tZomOIG9Y7yrj2jLLlNK3i+aLdON1RVf+fLHm">
-                        <div class="row">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                                Oops...! some problem!
-                            </div>
-                        </div>
-                        <div class="dragArea row">
-                            <div class="col-md col-sm-12 form-group mb-3 mb-3" data-for="name">
-                                <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form03-21">
-                            </div>
-                            <div class="col-md col-sm-12 form-group mb-3 mb-3" data-for="email">
-                                <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form03-21">
-                            </div>
-                            <div class="col-12 form-group mb-3 mb-3" data-for="phone">
-                                <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" value="" id="phone-form03-21">
-                            </div>
-                            <div class="col-12 form-group mb-3 mb-3" data-for="textarea">
-                                <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form03-21"></textarea>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">
-                                    Send message
-                                </button></div>
-                        </div>
-                    </form>
-                </div>
-
-
-            </div>
-            <div class="col-12 col-lg-6">
-                <div class="image-wrapper">
-                    <img class="w-100" src="assets/images/namste-612x408.jpg" alt="Mobirise Website Builder">
-                </div>
-            </div>
-
-        </div>
-    </div>
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-lg item-wrapper">
+              <div class="mbr-section-head mb-5">
+                  <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Get Involved</strong></h3>
+              </div>
+              <div class="col-lg-12 mx-auto mbr-form">
+                  <form id="contactForm" class="mbr-form form-with-styler">
+                      <div class="dragArea row">
+                          <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                              <input type="text" name="name" placeholder="Name" class="form-control" id="name">
+                              <span id="nameError" class="error"></span>
+                          </div>
+                          <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                              <input type="email" name="email" placeholder="E-mail" class="form-control" id="email">
+                              <span id="emailError" class="error"></span>
+                          </div>
+                          <div class="col-12 form-group mb-3" data-for="phone">
+                              <input type="tel" name="phone" placeholder="Phone" class="form-control" id="phone">
+                              <span id="phoneError" class="error"></span>
+                          </div>
+                          <div class="col-12 form-group mb-3" data-for="textarea">
+                              <textarea name="textarea" placeholder="Message" class="form-control" id="message"></textarea>
+                              <span id="messageError" class="error"></span>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                              <button type="submit" class="btn btn-primary display-4">Send message</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+          <div class="col-12 col-lg-6">
+              <div class="image-wrapper">
+                  <img class="w-100" src="assets/images/namste-612x408.jpg" alt="Image">
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
 
 <section data-bs-version="5.1" class="social05 cid-uofS74oeqz" id="social05-22">
@@ -376,22 +382,22 @@
             <div class="col-12">
                 <div class="social-row">
                     <div class="soc-item">
-                        <a href="https://vidishaagra.github.io/gss//" target="_blank">
+                        <a href="/" target="_blank">
                             <span class="mbr-iconfont socicon socicon-facebook"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://vidishaagra.github.io/gss//" target="_blank">
+                        <a href="/" target="_blank">
                             <span class="mbr-iconfont socicon-twitter socicon"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://vidishaagra.github.io/gss//" target="_blank">
+                        <a href="/" target="_blank">
                             <span class="mbr-iconfont socicon-instagram socicon"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://vidishaagra.github.io/gss//" target="_blank">
+                        <a href="/" target="_blank">
                             <span class="mbr-iconfont socicon socicon-linkedin"></span>
                         </a>
                     </div>
@@ -439,22 +445,22 @@
           <div class="col-12 mt-2 footer-col d-flex align-center justify-content-center">
               <div class="social-row mt-2 display-7 d-flex justify-content-center">
                   <div class="soc-item mx-2">
-                      <a href="https://vidishaagra.github.io/gss/">
+                      <a href="index.html">
                           <span class="mbr-iconfont socicon socicon-facebook"></span>
                       </a>
                   </div>
                   <div class="soc-item mx-2">
-                      <a href="https://vidishaagra.github.io/gss/">
+                      <a href="index.html">
                           <span class="mbr-iconfont socicon socicon-twitter"></span>
                       </a>
                   </div>
                   <div class="soc-item mx-2">
-                      <a href="https://vidishaagra.github.io/gss/">
+                      <a href="index.html">
                           <span class="mbr-iconfont socicon socicon-instagram"></span>
                       </a>
                   </div>
                   <div class="soc-item mx-2">
-                      <a href="https://vidishaagra.github.io/gss/">
+                      <a href="index.html">
                           <span class="mbr-iconfont socicon socicon-logmein"></span>
                       </a>
                   </div>
@@ -477,5 +483,7 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+
+    <script src="index.js"></script>
   </body>
 </html>
