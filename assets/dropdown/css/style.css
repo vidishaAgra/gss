@@ -263,3 +263,22 @@
   transition: none !important; }
 
 
+  @media (max-width: 768px) {
+    .event-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .event-card > div {
+      padding-left: 0;
+      margin-bottom: 10px;
+    }
+    .event-card h3 {
+      font-size: 16px;
+    }
+    .event-card p {
+      font-size: 12px;
+    }
+    .event-card div:first-child {
+      font-size: 16px;
+    }
+  }
