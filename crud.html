@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html  >
 <head>
@@ -9,8 +10,11 @@
   <link rel="shortcut icon" href="assets/images/samaj-logo-96x91.png" type="image/x-icon">
   <meta name="description" content="">
   
-  
-  <title>Login</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
+  <title>crud</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -23,9 +27,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=BT4d3k"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=BT4d3k" type="text/css">
 
-  
-  
-  
+
 </head>
 <body>
   
@@ -66,6 +68,67 @@
 		</div>
 	</nav>
 </section>
+
+<div class="container" style="margin-top: 10%;">
+    <div class="app" style="max-width: 700px; margin: auto; background-color: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h4 class="mb-3 text-primary text-center">User Management App</h4>
+
+        <!-- Add New User Button -->
+        <div id="addNew" style="display: flex; justify-content: space-between; background-color: #0d6efd; color: white; padding: 10px; border-radius: 5px; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#form">
+            <span>Add New User</span>
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <!-- Modal for Add New User -->
+        <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="background-color: #0d6efd; color: white;">
+                        <h5 class="modal-title" id="exampleModalLabel">Add New User</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="background-color: #f7f7f7;">
+                        <div class="mb-3">
+                            <label for="usernameInput" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="usernameInput">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailInput">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" id="addUser" class="btn btn-primary">Add User</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!-- Search Bar -->
+        <div style="margin: 15px 0;">
+            <input type="text" id="search" placeholder="Search by username..." class="form-control">
+        </div>
+
+        <!-- Total Users Count -->
+        <h5 class="text-center my-3">Total Users: <span id="userCount">0</span></h5>
+
+        <!-- User Table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="usersTable">
+                <!-- User rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
 
 
 
@@ -181,5 +244,66 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
+  <script src="index.js"></script>
+
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
