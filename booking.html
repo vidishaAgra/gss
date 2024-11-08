@@ -69,66 +69,45 @@
 
 
 <section style="padding: 10% 0;">
-    <div class="container" style="max-width: 1200px; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+	<div class="container" style="max-width: 1200px; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
         <div class="row">
-            
             <!-- Left Column: Details -->
             <div class="col-md-6" style="padding: 20px;">
-                <h3 style="font-size: 24px; color: #333; margin-bottom: 20px;">Rakshabandhan Event</h3>
-                
-                <!-- Date -->
-                <p style="font-size: 18px; color: #555;">Date: <strong>15th August 2024</strong></p>
+                <h3 id="event-name" style="font-size: 24px; color: #333; margin-bottom: 20px;"></h3>
 
-                <!-- Payment -->
-                <p style="font-size: 18px; color: #555;">Payment: <strong>$5</strong></p>
+                <!-- Date and Time -->
+                <p id="event-date" style="font-size: 18px; color: #555;"></p>
+                <p id="event-time" style="font-size: 18px; color: #555;"></p>
+
+                <!-- Venue -->
+                <p id="event-venue" style="font-size: 18px; color: #555;"></p>
+
+                <!-- Payment Details -->
+                <p id="event-payment" style="font-size: 18px; color: #555;"></p>
+                <p id="event-member-price" style="font-size: 18px; color: #555;"></p>
+                <p id="event-nonmember-price" style="font-size: 18px; color: #555;"></p>
 
                 <!-- Number of Members -->
-				<p style="font-size: 18px; color: #555;">Members: 
+                <p id="members-count" style="font-size: 18px; color: #555;">
+                    Members:
                     <button onclick="decreaseMembers()" style="font-size: 24px; border: none; background: none; cursor: pointer; color: #ff6f61;">-</button>
-                    <strong id="member-count">1</strong> 
+                    <strong id="member-count">1</strong>
                     <button onclick="increaseMembers()" style="font-size: 24px; border: none; background: none; cursor: pointer; color: #ff6f61;">+</button>
                 </p>
 
                 <!-- Register Button -->
-                <button class="btn btn-primary" style="background-color: #ff6f61; border: none; font-size: 18px; padding: 10px 20px; margin-top: 10px;">Register Now</button>
+                <button class="btn btn-primary" id="register-btn" style="background-color: #ff6f61; border: none; font-size: 18px; padding: 10px 20px; margin-top: 10px;">Register Now</button>
 
                 <!-- Scheduled Activities with Toggle Functionality -->
-                <div style="margin-top: 30px;">
+                <div id="activities-container" style="margin-top: 30px;">
                     <h4 style="font-size: 20px; color: #333;">Scheduled Activities</h4>
-
-                    <!-- Activity 1 -->
-                    <div>
-                        <button id="details1-btn" style="font-size: 24px; border: none; background: none; cursor: pointer; color: #ff6f61;" onclick="toggleDetails('details1')">+</button>
-                        <strong>Morning Pooja</strong>
-                        <div id="details1" style="display: none; margin-top: 10px;">
-                            <p style="font-size: 16px; color: #777;">Starts at 8:00 AM. The event will include a traditional pooja and blessings ceremony.</p>
-                        </div>
-                    </div>
-
-                    <!-- Activity 2 -->
-                    <div style="margin-top: 15px;">
-                        <button id="details2-btn" style="font-size: 24px; border: none; background: none; cursor: pointer; color: #ff6f61;" onclick="toggleDetails('details2')">+</button>
-                        <strong>Rakshabandhan Ceremony</strong>
-                        <div id="details2" style="display: none; margin-top: 10px;">
-                            <p style="font-size: 16px; color: #777;">Rakhi tying will commence at 10:00 AM, followed by family blessings.</p>
-                        </div>
-                    </div>
-
-                    <!-- Activity 3 -->
-                    <div style="margin-top: 15px;">
-                        <button id="details3-btn" style="font-size: 24px; border: none; background: none; cursor: pointer; color: #ff6f61;" onclick="toggleDetails('details3')">+</button>
-                        <strong>Lunch Feast</strong>
-                        <div id="details3" style="display: none; margin-top: 10px;">
-                            <p style="font-size: 16px; color: #777;">Traditional Indian feast starting at 1:00 PM.</p>
-                        </div>
-                    </div>
-
+                    <p id="event-description" style="font-size: 16px; color: #555;"></p>
                 </div>
             </div>
 
             <!-- Right Column: Image -->
             <div class="col-md-6" style="padding: 20px;">
-                <img src="assets\images\raksha-302x37.png" alt="Rakshabandhan Event Image" style="width: 100%; height: 80%; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                <img src="assets/images/raksha-302x37.png" alt="Event Image" style="width: 100%; height: 80%; border-radius: 10px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
             </div>
         </div>
     </div>
@@ -239,5 +218,6 @@
 		}
 	}
 </script>
+<script src="index2.js"></script>
   </body>
 </html>

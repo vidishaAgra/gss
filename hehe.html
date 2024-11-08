@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Single Event</title>
+</head>
+<body>
+    <h1>Single Event Fetcher</h1>
+    <button onclick="fetchSingleEvent('Lohri')">Fetch Lohri Event Details</button>
+
+    <script>
+        // Function to fetch and log single event details
+        function fetchSingleEvent(eventName) {
+            const apiUrl = `https://qzicsfudik.execute-api.us-east-1.amazonaws.com/test/gss_get_single_event?eventName=${encodeURIComponent(eventName)}`;
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    console.log("Event Details:", data);
+                    // Display the event details in the HTML
+                    displayEventDetails(data);
+                })
+                .catch(error => {
+                    console.error("Error fetching event data:", error);
+                });
+        }
+
+        // Function to display event details on the page
+        function displayEventDetails(eventData) {
+            const eventDetailsDiv = document.getElementById("event-details");
+            eventDetailsDiv.innerHTML = `
+                <h2>Event Name: ${eventData.eventName}</h2>
+                <p>Date: ${eventData.eventDate}</p>
+                <p>Time: ${eventData.time}</p>
+                <p>Description: ${eventData.description || "No description available"}</p>
+            `;
+        }
+    </script>
+
+    <div id="event-details">
+        <!-- Event details will be displayed here -->
+    </div>
+</body>
+</html>
