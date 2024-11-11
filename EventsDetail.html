@@ -67,7 +67,7 @@
 	</nav>
 </section>
 
- <section data-bs-version="5.1" class="form5 cid-uoCuHppLQ5" >
+ <!-- <section data-bs-version="5.1" class="form5 cid-uoCuHppLQ5" >
     
     
     <div class="container">
@@ -151,9 +151,68 @@
 		
 		
     </div>
-</section> 
+</section>  -->
 
 
+<section data-bs-version="5.1" class="form5 cid-uoCuHppLQ5" style="padding: 40px 0; background-color: #f9f9f9;">
+    <div class="container" style="max-width: 800px;">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Add Event</strong>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form">
+                <form id="addEventForm" class="mbr-form form-with-styler" data-form-title="Add Event Form">
+                    <!-- Event Name -->
+                    <div class="form-group mb-3">
+                        <input type="text" name="eventName" placeholder="Event Name" class="form-control" required>
+                    </div>
+
+                    <!-- Event Date -->
+                    <div class="form-group mb-3">
+                        <input type="date" name="eventDate" placeholder="Date" class="form-control" required>
+                    </div>
+
+                    <!-- Venue -->
+                    <div class="form-group mb-3">
+                        <input type="text" name="venue" placeholder="Venue" class="form-control" required>
+                    </div>
+
+                    <!-- Time -->
+                    <div class="form-group mb-3">
+                        <input type="time" name="time" placeholder="Time" class="form-control" required>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group mb-3">
+                        <textarea name="description" placeholder="Description" class="form-control" required></textarea>
+                    </div>
+
+                    <!-- Member and Non-Member Ticket Prices -->
+                    <div class="row">
+                        <div class="col-md-6 form-group mb-3">
+                            <input type="number" name="memberPrice" placeholder="Member Ticket Price" class="form-control" step="0.01" required>
+                        </div>
+                        <div class="col-md-6 form-group mb-3">
+                            <input type="number" name="nonmemberPrice" placeholder="Non-Member Entry Price" class="form-control" step="0.01" required>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="align-center mbr-section-btn">
+                        <button type="submit" class="btn btn-primary">Add Event</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -273,6 +332,49 @@
     <input name="animation" type="hidden">
 
 	<script src="index.js"></script>
+<script>
+	
 
+//----------------------------------- eventdetails
+
+document.getElementById("addEventForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    // Gather form data into an object matching the API test case
+    const formData = new FormData(this);
+
+    const eventData = {
+        eventName: formData.get("eventName"),
+        eventDate: formData.get("eventDate"),
+        venue: formData.get("venue"),
+        time: formData.get("time"),
+        description: formData.get("description"),
+        memberPrice: parseFloat(formData.get("memberPrice")),
+        nonmemberPrice: parseFloat(formData.get("nonmemberPrice"))
+    };
+
+    try {
+        const response = await fetch("https://qzicsfudik.execute-api.us-east-1.amazonaws.com/test/gss_add_event", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(eventData)
+        });
+
+        if (response.ok) {
+            alert("Event added successfully!");
+            document.getElementById("addEventForm").reset();
+        } else {
+            throw new Error("Failed to add event.");
+        }
+    } catch (error) {
+        console.error("Error:", error);
+        alert("An error occurred while adding the event.");
+    }
+});
+
+
+</script>
   </body>
 </html>

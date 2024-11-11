@@ -85,22 +85,17 @@
 
 
 
-
 <section data-bs-version="5.1" class="people01 cid-uoUmqVpgM4" id="people01-4a">
-  
-
-  
-
-      <div class="container" >
+    <div class="container">
         <div id="single-member-container" style="background-color: white; padding: 20px; border-radius: 10px;">
             <h2>Member Details</h2>
-            
+
             <!-- Editable fields for member details -->
             <div style="margin-bottom: 15px;">
                 <label for="member-name" style="font-weight: bold; color: #333;">Name:</label>
                 <input type="text" id="member-name" style="width: 100%; padding: 8px;" />
             </div>
-            
+
             <div style="margin-bottom: 15px;">
                 <label for="member-email" style="font-weight: bold; color: #333;">Email:</label>
                 <input type="email" id="member-email" style="width: 100%; padding: 8px;" disabled />
@@ -110,12 +105,16 @@
                 <label for="member-phone" style="font-weight: bold; color: #333;">Phone:</label>
                 <input type="text" id="member-phone" style="width: 100%; padding: 8px;" />
             </div>
-            
+
             <!-- Update button to save the edited details -->
             <button id="update-button" style="padding: 10px 20px; background-color: #798475; color: white; border: none; border-radius: 5px; cursor: pointer;">Update</button>
+
+            <!-- Delete button for deleting the member -->
+            <button id="delete-button" style="padding: 10px 20px; background-color: #d9534f; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Delete</button>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+
     
 
 
@@ -255,6 +254,6 @@
   
  <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
-    <script src="index2.js"></script>
+    <script src="admin.js"></script>
   </body>
 </html>

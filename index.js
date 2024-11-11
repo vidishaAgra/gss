@@ -403,6 +403,3 @@ search.addEventListener("input", (e) => {
 
 
 
-
-
-
