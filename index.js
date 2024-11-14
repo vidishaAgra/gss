@@ -402,4 +402,49 @@ search.addEventListener("input", (e) => {
 
 
 
+async function fetchAndDisplayEvents() {
+    const eventsApiUrl = 'https://qzicsfudik.execute-api.us-east-1.amazonaws.com/test/gss_get_all_events';
 
+    try {
+      const response = await fetch(eventsApiUrl);
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+      
+      const events = await response.json();
+      
+      // Sort events by date (assuming the date format is 'YYYY-MM-DD')
+      events.sort((a, b) => new Date(b.eventDate) - new Date(a.eventDate));
+
+      // Get the latest 3 events
+      const latestEvents = events.slice(0, 3);
+
+      // Render events
+      const container = document.getElementById("events-container");
+      container.innerHTML = ""; // Clear previous content
+
+      latestEvents.forEach(event => {
+        const eventHtml = `
+          <div class="item features-image col-12 col-md-6 col-lg-4 active">
+            <div class="item-wrapper">
+              <div class="item-content">
+                <h5 class="item-title mbr-fonts-style display-5"><strong>${event.eventName}</strong></h5>
+                <h6 class="item-subtitle mbr-fonts-style display-7">Date: ${event.eventDate}</h6>
+                <p class="mbr-text mbr-fonts-style display-7">${event.description}</p>
+                <div class="mbr-section-btn item-footer">
+                  <a href="index.html" class="btn item-btn btn-primary display-4">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+        container.insertAdjacentHTML("beforeend", eventHtml);
+      });
+
+    } catch (error) {
+      console.error("Error fetching events:", error);
+    }
+  }
+
+  // Fetch and display events when the page loads
+  document.addEventListener("DOMContentLoaded", fetchAndDisplayEvents);
